@@ -1,25 +1,26 @@
 {
-  "name":"TARS Home Intelligence","version":"1.0.0","slug":"home_intelligence",
-  "description":"Cross-system correlation engine. Connects vacuum, lighting, music, security, climate into contextual automation.",
+  "name":"TARS Home Intelligence","version":"2.0.0","slug":"home_intelligence",
+  "description":"Event-driven correlation engine with pattern learning, adaptive rules, and state machine.",
   "url":"https://github.com/bstanbury/ha-addon-home-intelligence",
   "arch":["aarch64","amd64","armhf","armv7","i386"],
   "startup":"application","boot":"auto","init":false,"host_network":true,
   "options":{
     "ha_url":"http://localhost:8123","ha_token":"","api_port":8093,
+    "event_bus_url":"http://localhost:8092",
     "vacuum_url":"http://localhost:8099",
     "switchbot_url":"http://localhost:8098",
     "spotify_url":"http://localhost:8097",
     "hue_url":"http://localhost:8096",
     "analytics_url":"http://localhost:8095",
     "doorbell_url":"http://localhost:8094",
-    "cooper_schedule":"fri_1600-mon_1100,tue_0800-1100,thu_1630-1930",
-    "poll_interval":15
+    "cooper_schedule":"fri_1600-mon_1100,tue_0800-1100,thu_1630-1930"
   },
   "schema":{
     "ha_url":"str","ha_token":"str","api_port":"int",
+    "event_bus_url":"str",
     "vacuum_url":"str","switchbot_url":"str","spotify_url":"str",
     "hue_url":"str","analytics_url":"str","doorbell_url":"str",
-    "cooper_schedule":"str","poll_interval":"int"
+    "cooper_schedule":"str"
   },
   "panel_icon":"mdi:brain"
 }
