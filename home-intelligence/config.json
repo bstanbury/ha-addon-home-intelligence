@@ -1,6 +1,6 @@
 {
   "name":"TARS Home Intelligence","version":"3.0.0","slug":"home_intelligence",
-  "description":"Event-driven correlation engine with bedroom sleep protection, richer mode state machine, proactive intelligence, and decision audit trail.",
+  "description":"Event-driven correlation engine with pattern learning, adaptive rules, and state machine.",
   "url":"https://github.com/bstanbury/ha-addon-home-intelligence",
   "arch":["aarch64","amd64","armhf","armv7","i386"],
   "startup":"application","boot":"auto","init":false,"host_network":true,
